@@ -1,0 +1,36 @@
+<html>
+<head>
+    
+</head>
+<body style=background-color:violet;">
+
+    <table id="tabell" style="width:70%; height:90%;" border="1">
+    </table>
+	
+	<script>
+    function tabellOp()
+    {
+            var country = ["Christ College", "St. Joseph's College", "Career Guidance", "Delhi University", "Christ University", "Manipal University", "Career Guidance", "Christ University", "Delhi University",];
+            var capital = ["Dr.Sebastian Thomas", "Prof.Vinay Kumar", "Mr.Francis", "Miss. Musthafa Afsal", "Mr. John K", " Prof.Sunil Menon", "Dr.Azaruddin KM", "Mr.Prakash VP", "Prof.Paul Paul" ];
+            var num = ["9123852003", "8200324445", "7344622036", "9405123647", "8515007793", "7648832071", "7795633404", "8452307941", "7125497821"];
+
+        var tabellget = document.querySelector("#tabell");
+        var row = "<tr><th>University/Personal Trainer</th><th>Name</th><th>Phone</th></tr>";
+        tabellget.innerHTML = "test";
+        row += "</tr>";
+
+    for (var i = 0; i < capital.length; i++) 
+        {
+            row += "<tr><td>" + capital[i] + "</td><td>"+country[i]+"</td><td>"+num[i]+"</td></tr>";
+        }
+
+    tabellget.innerHTML = row; 
+
+    }
+
+    tabellOp();
+    </script>
+
+    
+</body>
+</html>

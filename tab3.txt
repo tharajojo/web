@@ -1,0 +1,81 @@
+ <table style="width:70%; height:90%;" border="1">
+<th>District</th>
+      <th>Name</th>
+      <th>Phone</th>
+         <tr>
+            <td>Thiruvananthapuram</td>
+            <td>Abc traders</td>
+            <td>91+ 7994388012</td>
+         </tr>
+         
+         <tr>
+            <td>Kollam</td>
+            <td>Sebatty V</td>
+            <td>91+ 9349825544 </td>
+         </tr>
+       <tr>
+            <td>Alappuzha</td>
+            <td>Jose P</td>
+            <td>91+ 7996580132</td>
+         </tr>
+         
+         <tr>
+            <td>Pathanamthitta</td>
+            <td>Sudhir A</td>
+            <td>91+ 8239821144 </td>
+         </tr>
+         <tr>
+            <td>Kottayam</td>
+            <td>pqr traders</td>
+            <td>91+ 7946885152</td>
+         </tr>
+         
+         <tr>
+            <td>Idukki</td>
+            <td>John T</td>
+            <td>91+ 9995338452</td>
+         </tr>
+       <tr>
+            <td>Ernakulam</td>
+            <td>Sunil K</td>
+            <td>91+ 9594388012</td>
+         </tr>
+         
+         <tr>
+            <td>Thrissur</td>
+            <td>Francis M</td>
+            <td>91+ 8632256196</td>
+         </tr>
+	<tr>
+            <td>Palakkad</td>
+            <td>KK traders</td>
+            <td>91+ 7994555012</td>
+         </tr>
+         
+         <tr>
+            <td>Malappuram</td>
+            <td>Mohammed Aanid</td>
+            <td>91+ 9853214756 </td>
+         </tr>
+	<tr>
+            <td>Kozhikode</td>
+            <td>Abu Bakar</td>
+            <td>91+ 7994388022</td>
+         </tr>
+         
+         <tr>
+            <td>Wayanadu</td>
+            <td>Vishwanath Menon</td>
+            <td>91+ 9552150365 </td>
+	<tr>
+            <td>Kannur</td>
+            <td>Kairali traders</td>
+            <td>91+ 7997898012</td>
+         </tr>
+         
+         <tr>
+            <td>Kasaragod</td>
+            <td>Star Traders</td>
+            <td>91+ 9632252707 </td>
+         </tr>
+      </table>

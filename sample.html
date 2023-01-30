@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Array2Table</title>
+</head>
+<body style=background-color:lightyellow;>
+  <div id="tableContent"></div>
+  <script>
+    var country = ["Trivandrum", "Kollam", "Alappuzha", "Pattanathitta", "Kottayam", "Idukki", "Ernakulam", "Thrissur", "Palakad", "Malappuram", "Kozhikode", "Wayanadu", "Kannur", "Kasargode"];
+    var capital = ["Sebastian Thomas", "Abc Traders" , "Vinay Kumar", "Francis", "Pqr Trader", "Musthafa Afsal", "John K", "Sunil Menon", "Azaruddin KM", "Abu Bakkar", "Jose P", "Mohammed Aanid", "Prakash VP", "Paul Paul" ]
+    var num = ["9123852003", "8200324445", "7344622036", "9405123647", "8515007793", "7648832071", "7795633404", "8452307941", "7125497821", "9471045304", "7811666247", "6471232554", "7135942015", "7965253414"]; 
+    const tmpl = (country,capital,num) => `
+        <table style="width:70%; height:90%;" border="1"><thead>
+        <tr><th>District<th>Name<th>Phone<tbody>
+        ${country.map( (cell, index) => `
+            <tr><td>${cell}<td>${capital[index]}<td>${num[index]}</tr>
+        `).join('')}
+        </table>`;
+    tableContent.innerHTML=tmpl(country, capital, num);
+    </script> 
+</body>
+</html>

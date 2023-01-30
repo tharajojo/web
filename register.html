@@ -1,0 +1,91 @@
+<html>
+<head>
+<script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+		fname=form.fname.value;
+		lname=form.lname.value;
+		name=fname+" "+lname;
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Please enter Password"); 
+                      
+                // If confirm password not entered 
+                else if (password2 == '') 
+                    alert ("Please enter confirm password"); 
+                      
+                // If Not same return False.     
+                else if (password1 != password2) { 
+                    alert ("\nPassword did not match: Please try again...") 
+                    return false; 
+                } 
+  
+                // If same return True. 
+                else{ 
+                    alert("Password Match: Welcome "+name+"!") 
+                    return true; 
+                } 
+            } 
+        </script> 
+ <style>
+         body {
+            background-image: url("i9.jpg");
+         }
+ form{
+  	border-width:4pt; 
+	border-style:solid;
+	background-color:lightyellow;
+	
+	}
+
+      </style>
+
+<div class="topnav">
+	<h2 align="right">
+	<a  href="assign2.html"style=background-color:white;>Home</a>
+	<a  href="feedback.html"style=background-color:white;>Feedback</a>
+	<a  href="brands.html"style=background-color:white;> Our Brands</a>
+	<a  href="table.html"style=background-color:white;> Dealers in Kerala</a>
+	<a  href="signin.html"style=background-color:white;>Sign in</a>
+	<a  href="contact.html"style=background-color:white>Contact us</a>
+	</div>
+
+</head>
+
+<body style=color:darkred>
+<b><center>
+
+<form onSubmit = "return checkPassword(this)"> 
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+<big><label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="sname">User ID:</label><br>
+  <input type="text" id="userid" name="user id"><br>
+  <label for="birthday">Birthday:</label><br>
+  <input type="date" id="birthday" name="birthday"><br>
+  <label for="email">Enter your email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="pswd">Password:</label><br>
+<input type="password" id="pswd" name="password1"><br><br>
+<label for="pswd">Password Confirmation:</label><br>
+<input type="password" id="pswd" name="password2"><br><br>
+  <a href = "assign2.html"> <input type ="submit" value = "Submit"></a>
+  </div>
+
+  <div class="container signin">
+    <p style=background-color:lightblue;>Already have an account? <a href="signin.html">Sign in</a></p>
+  </div>
+</form>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assign 6</title>
+</head>
+<body style=background-color:lightyellow;">
+<p><button onclick="sortTable()">Sort</button></p>
+    <table id="tabell" style="width:70%; height:90%;" border="1">
+    </table>
+	
+	<script>
+    function tabellOp()
+    {
+            var country = ["Trivandrum", "Kollam", "Alappuzha", "Pattanathitta", "Kottayam", "Idukki", "Ernakulam", "Thrissur", "Palakad", "Malappuram", "Kozhikode", "Wayanadu", "Kannur", "Kasargode"];
+            var capital = ["Sebastian Thomas", "Abc Traders" , "Vinay Kumar", "Francis", "Pqr Trader", "Musthafa Afsal", "John K", "Sunil Menon", "Azaruddin KM", "Abu Bakkar", "Jose P", "Mohammed Aanid", "Prakash VP", "Paul Paul" ];
+            var num = ["9123852003", "8200324445", "7344622036", "9405123647", "8515007793", "7648832071", "7795633404", "8452307941", "7125497821", "9471045304", "7811666247", "6471232554", "7135942015", "7965253414"];
+
+        var tabellget = document.querySelector("#tabell");
+        var row = "<tr><th>District</th><th>Name</th><th>Phone</th></tr>";
+        tabellget.innerHTML = "test";
+        row += "</tr>";
+
+    for (var i = 0; i < capital.length; i++) 
+        {
+            row += "<tr><td>" + country[i] + "</td><td>"+capital[i]+"</td><td>"+num[i]+"</td></tr>";
+        }
+
+    tabellget.innerHTML = row; 
+
+    }
+
+    tabellOp();
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("tabell");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+    </script>
+<a href="assign2.html">Home</a>
+    
+</body>
+</html>
